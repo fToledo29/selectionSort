@@ -15,8 +15,8 @@ const selectionSort = (arr) => {
 
 		while (j < n) {
 			/**
-			 * Validating if any alement on the right side of the array is smaller 
-			 * than the current 
+			 * Validating if any element on the right side of the array is smaller 
+			 * than the current item.
 			 */
 			if (arr[j] < arr[minIndx]) {
 
@@ -30,17 +30,17 @@ const selectionSort = (arr) => {
 
 		/**
 		 * Validating that the new min index is not the same as the current 
-		 * from the outer loop.
+		 * index from the outer loop.
 		 */
 		if (minIndx !== i) {
 
 			// Selection of the new min item
 			const temp = arr[minIndx];
 
-			// Moving current to the old min position
+			// Moving current item to the old min position
 			arr[minIndx] = arr[i];
 
-			// Saving the new min in the current position.
+			// Saving the new min item in the current position.
 			arr[i] = temp;
 		}
 
