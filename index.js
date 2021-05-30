@@ -1,3 +1,8 @@
+/**
+ * Selection Sort Time complexity:
+ * Worst: O(n^2)
+ * Average: O(n^2)
+ */
 
 const selectionSort = (arr) => {
 
